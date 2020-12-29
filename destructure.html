@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+  var value = { x : 1.23, y : 2.34, z : 3.45};
+
+  const {x : a, y : b, z : c} = value;
+  console.log(a,b,c);
+
+  const AVG_TEMPRATURE = {
+    toady : 27,
+    tommorow : 28
+  };
+
+  function getTempOfTommorow(avgTemprature){
+    "use strict";
+    const { tommorow : tempOfTommorow} = avgTemprature; //if we are using nested object then
+    return tempOfTommorow;                              //{tommorow {max* : maxOfTommorow*}}
+  }                                                     //*assumed object & function is already defind.
+
+  console.log(getTempOfTommorow(AVG_TEMPRATURE));
+</script>
+</body>
+</html>

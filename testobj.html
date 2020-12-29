@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+  var ourSchool = {
+      "School name" : "JNV",
+      "Location" : "Borakhadi",
+      "sport" : "Hand ball",
+      "Ground" : "4",
+  };
+
+  function checkObj(check){
+    if(ourSchool.hasOwnProperty(check)){
+      return ourSchool[check];
+    }else{
+      return "Not found"
+    }
+  }
+  console.log(checkObj("Ground"));
+
+</script>
+</body>
+</html>

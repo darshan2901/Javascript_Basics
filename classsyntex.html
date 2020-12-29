@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+  function makeClass(){
+    class Vegetable {
+      constructor(name){
+        this.name = name;
+      }
+    }
+    return Vegetable;
+  }
+  const Vegetable = makeClass();
+  const carrot = new Vagetable('carrot');
+  console.log(carrot.name);
+
+</script>
+</body>
+</html>

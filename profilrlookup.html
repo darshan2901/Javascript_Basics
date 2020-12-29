@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+  var contacts = [
+  {
+    "firstname" : "romit",
+    "lastname" : "dangodara",
+    "age" : "21",
+    "likes" : ["social services","study","running"]
+  },
+  {
+    "firstname" : "chand",
+    "lastname" : "bud",
+    "age" : "20",
+    "likes" : ["coading","rading","spoken english"]
+  },
+  {
+    "firstname" : "keval",
+    "lastname" : "akbari",
+    "age" : "unknown",
+    "likes" : ["traveling","spoken german","sleeping"]
+  }
+];
+
+function lookup(name,prop){
+  for(var i = 0; i < contacts.length; i++){
+    if(contacts[i].firstname === name){
+      return contacts[i][prop] || "not a such property";
+    }
+  }
+  return "not a such contacts";
+}
+var data = lookup("keval","likes");
+console.log(data);
+
+</script>
+</body>
+</html>

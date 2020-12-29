@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+  const source = [1,2,3,4,5,6,7,8,9];
+  function removeFirstTwoElement(list){
+    const [ , , ...arr] = list;
+    return arr;
+  }
+  const arr = removeFirstTwoElement(source);
+  console.log(source);
+  console.log(arr);
+</script>
+</body>
+</html>
